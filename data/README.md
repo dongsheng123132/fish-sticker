@@ -1,10 +1,10 @@
 # Data
 
-`species.json` 是完整数据集，每条一个物种。CSV 为展平子集（占坑阶段尚未生成）。样例见 `sample.json`。
+`species.json` 计划为完整数据集（每条一个物种），**尚未生成**；CSV 为展平子集（尚未生成）。当前仓库仅有样例 `sample.json`。
 
 | 文件 | 内容 | 许可 |
 |---|---|---|
-| `species.json` | 除中文图鉴文字外的全部字段 | 编纂部分 MIT；第三方字段沿用各自条款（见 NOTICE.md） |
+| `species.json`（尚未生成） | 除中文图鉴文字外的全部字段 | 编纂部分 MIT；第三方字段沿用各自条款（见 NOTICE.md） |
 | `sample.json` | 占坑样例（字段结构演示，待逐项核对） | MIT |
 
 ## species.json 字段

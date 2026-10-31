@@ -2,9 +2,9 @@
 
 全世界现存鱼类的贴纸库：每种一张白边贴纸，附多语言鱼名与分布、形态、保护等级结构化数据。学 [花叔 huashu-bird-sticker](https://github.com/alchaincyf/huashu-bird-sticker) 的「鸣迹」模式，先从**海洋鱼**开始，再补全**淡水鱼**。
 
-> 🚧 **占坑阶段**：数据 schema、许可、样例数据已就位；贴纸正在制作中，`data/species.json` 全量数据逐步补齐。
+> 🚧 **占坑阶段**：数据 schema、许可、样例数据已就位；贴纸尚未生成（筹备中），`data/species.json` 全量数据尚未生成。
 
-**English:** Stickers for the world's fish species — one white-bordered sticker per species, with multilingual names and structured data. Inspired by Huashu's bird stickers. **Early stage: schema, license and samples are live; stickers are in production.**
+**English:** Stickers for the world's fish species — one white-bordered sticker per species, with multilingual names and structured data. Inspired by Huashu's bird stickers. **Early stage: schema, license and samples are live; stickers have not yet been generated (in preparation).**
 
 ---
 
@@ -26,7 +26,7 @@
 3. **独立打分审校**：画图和审校分开，独立对辨识特征打分。
 4. **画不好就重画**：80 分过线、70–79 保留、<70 重画，`meetsQualityBar` 落字段。
 
-参考图**不打包进仓库**，逐种在 `data/species.json` 里可溯源。
+参考图**不打包进仓库**，将逐种在 `data/species.json` 里溯源。
 
 ## 数据 schema
 
@@ -50,7 +50,7 @@
 
 ```
 stickers/<Order>/<Family>/<Genus_species>.webp   贴纸（白边透明底，约 1000px）
-data/species.json                                 全量数据（每条一个物种）
+data/species.json                                 全量数据（每条一个物种，尚未生成）
 data/species.schema.json                          JSON Schema
 data/README.md                                    字段说明与来源
 LICENSE.md                                        许可概览
@@ -59,14 +59,14 @@ NOTICE.md                                         第三方来源说明
 
 ## 许可
 
-- 贴纸：**PolyForm Shield 1.0.0** —— 几乎随便用（含商用），唯一禁止「做与鱼迹竞争的观鱼/识鱼/鱼类图鉴产品」。
+- 贴纸：**PolyForm Shield 1.0.0** —— 源码/资源公开、可复制分发，但**不是 OSI 开源许可**，有**竞争限制**：禁止做与鱼迹竞争的观鱼/识鱼/鱼类图鉴产品。
 - 数据（编纂部分）：**MIT**；第三方（分类、鱼名、体征等）在 [NOTICE.md](NOTICE.md) 逐条保留。
 
 详见 [LICENSE.md](LICENSE.md)。
 
 ## Roadmap
 
-- [ ] 数据 schema 与许可（✅ 已完成）
+- [x] 数据 schema 与许可
 - [ ] 首批海洋鱼贴纸小样（100–300 种）跑通流水线
 - [ ] 海洋鱼全物种（约 1.5–2 万种）
 - [ ] 淡水鱼补全
@@ -82,7 +82,7 @@ NOTICE.md                                         第三方来源说明
 
 ## 致敬格拉巴图谱
 
-鱼迹 App 的复古图鉴页会致敬**格拉巴图谱（グラバー図譜）**——《日本西部及南部鱼类图谱》，仓场富三郎（托马斯·阿尔伯特·格拉巴）于大正初年到昭和初期约 20 年间，请五位长崎画师手绘的 34 卷 805 幅海产鱼类、甲壳类、软体动物图谱，被涩泽敬三誉为「日本四大鱼谱之一」，现藏长崎大学附属图书馆，原作已入公有领域。
+鱼迹 App 的复古图鉴页会致敬**格拉巴图谱（グラバー図譜）**——《日本西部及南部鱼类图谱》，仓场富三郎（托马斯·阿尔伯特·格拉巴）于大正初年到昭和初期约 20 年间，请五位长崎画师手绘的 34 卷 805 幅海产鱼类、甲壳类、软体动物图谱，被涩泽敬三誉为「日本四大鱼谱之一」，现藏长崎大学附属图书馆。原作是否已入公有领域需逐作者、逐幅核实（**待核**），不能仅凭年代断言。
 
 ## 贡献
 
