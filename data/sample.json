@@ -1,0 +1,39 @@
+{
+  "schemaVersion": "0.1.0",
+  "note": "fish-sticker 占坑样例数据。字段结构沿用 huashu-bird-sticker 的 species.json 并改造；ids、traits、conservation 等需按权威源逐项核对后填充，贴纸尚在生产中（sticker.status=pending）。",
+  "species": [
+    {
+      "id": "Pagrus_major",
+      "scientificName": "Pagrus major",
+      "authority": "(Temminck & Schlegel, 1843)",
+      "taxonomy": { "system": "Eschmeyer's Catalog of Fishes (待核对)", "order": "Spariformes", "family": "Sparidae", "genus": "Pagrus" },
+      "names": { "en": "Red seabream", "zh-Hans": "真鲷", "zh-Hant": "真鯛", "ja": "マダイ" },
+      "ids": { "wikidata": null, "gbif": null, "fishbase": null, "inaturalist": null },
+      "range": { "habitat": "marine", "distribution": "Northwest Pacific" },
+      "conservation": { "iucn": null },
+      "sticker": { "file": null, "kind": null, "reviewScore": null, "meetsQualityBar": false, "license": "PolyForm-Shield-1.0.0", "status": "pending", "reference": null }
+    },
+    {
+      "id": "Cyprinus_carpio",
+      "scientificName": "Cyprinus carpio",
+      "authority": "Linnaeus, 1758",
+      "taxonomy": { "system": "Eschmeyer's Catalog of Fishes (待核对)", "order": "Cypriniformes", "family": "Cyprinidae", "genus": "Cyprinus" },
+      "names": { "en": "Common carp", "zh-Hans": "鲤鱼", "zh-Hant": "鯉魚", "ja": "コイ" },
+      "ids": { "wikidata": null, "gbif": null, "fishbase": null, "inaturalist": null },
+      "range": { "habitat": "freshwater", "distribution": "native Eurasia, introduced worldwide" },
+      "conservation": { "iucn": null },
+      "sticker": { "file": null, "kind": null, "reviewScore": null, "meetsQualityBar": false, "license": "PolyForm-Shield-1.0.0", "status": "pending", "reference": null }
+    },
+    {
+      "id": "Acipenser_sinensis",
+      "scientificName": "Acipenser sinensis",
+      "authority": "Gray, 1835",
+      "taxonomy": { "system": "Eschmeyer's Catalog of Fishes (待核对)", "order": "Acipenseriformes", "family": "Acipenseridae", "genus": "Acipenser" },
+      "names": { "en": "Chinese sturgeon", "zh-Hans": "中华鲟", "zh-Hant": "中華鱘", "ja": "チョウザメ" },
+      "ids": { "wikidata": null, "gbif": null, "fishbase": null, "inaturalist": null },
+      "range": { "habitat": "anadromous", "distribution": "East China Sea, Yangtze River" },
+      "conservation": { "iucn": "CR" },
+      "sticker": { "file": null, "kind": null, "reviewScore": null, "meetsQualityBar": false, "license": "PolyForm-Shield-1.0.0", "status": "pending", "reference": null }
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "fish-sticker species record",
+  "type": "object",
+  "required": ["id", "scientificName", "taxonomy", "names", "sticker"],
+  "properties": {
+    "id": { "type": "string", "description": "Genus_species，文件命名稳定键" },
+    "scientificName": { "type": "string" },
+    "authority": { "type": ["string", "null"] },
+    "taxonomy": {
+      "type": "object",
+      "properties": {
+        "system": { "type": "string" },
+        "order": { "type": "string" },
+        "family": { "type": "string" },
+        "genus": { "type": "string" }
+      }
+    },
+    "names": { "type": "object", "description": "语言代码 -> 俗名", "additionalProperties": { "type": "string" } },
+    "ids": {
+      "type": "object",
+      "properties": {
+        "wikidata": { "type": ["string", "null"] },
+        "gbif": { "type": ["string", "null"] },
+        "fishbase": { "type": ["string", "null"] },
+        "inaturalist": { "type": ["integer", "null"] }
+      }
+    },
+    "range": {
+      "type": "object",
+      "properties": {
+        "habitat": { "type": ["string", "null"] },
+        "distribution": { "type": ["string", "null"] }
+      }
+    },
+    "traits": { "type": ["object", "null"] },
+    "conservation": {
+      "type": "object",
+      "properties": {
+        "iucn": { "type": ["string", "null"] },
+        "cites": { "type": ["string", "null"] }
+      }
+    },
+    "sticker": {
+      "type": "object",
+      "properties": {
+        "file": { "type": ["string", "null"] },
+        "kind": { "enum": ["ai-illustration", "photo-cutout", null] },
+        "reviewScore": { "type": ["integer", "null"] },
+        "meetsQualityBar": { "type": "boolean" },
+        "license": { "type": ["string", "null"] },
+        "status": { "enum": ["pending", "done", "failed"] },
+        "reference": { "type": ["object", "null"] }
+      }
+    }
+  }
+}
